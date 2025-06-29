@@ -2,7 +2,7 @@
   "name": "aigent",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://votre-username.github.io/AigentFront",
+  "homepage": ".",
   "proxy": "https://web-production-c9b7.up.railway.app",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
