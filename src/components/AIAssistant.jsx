@@ -350,37 +350,7 @@ const ChatMessage = ({ message }) => {
                 </div>
               )}
 
-              {/* Contact Extraction Display */}
-              {message.contactExtraction && (
-                <div className="mt-4 pt-4 border-t border-gray-200/50">
-                  <div className="bg-gradient-to-br from-green-50 to-emerald-50 border border-green-200/80 rounded-2xl p-4">
-                    <div className="flex items-center gap-2 mb-3">
-                      <UserIcon className="w-4 h-4 text-green-600" />
-                      <h4 className="font-semibold text-green-800">Contact Information</h4>
-                    </div>
-                    <div className="space-y-2">
-                      {message.contactExtraction.name && (
-                        <div className="flex items-center gap-2 text-sm">
-                          <UserIcon className="w-4 h-4 text-green-600" />
-                          <span className="text-green-800">{message.contactExtraction.name}</span>
-                        </div>
-                      )}
-                      {message.contactExtraction.email && (
-                        <div className="flex items-center gap-2 text-sm">
-                          <MailIcon className="w-4 h-4 text-green-600" />
-                          <span className="text-green-800">{message.contactExtraction.email}</span>
-                        </div>
-                      )}
-                      {message.contactExtraction.phone && (
-                        <div className="flex items-center gap-2 text-sm">
-                          <PhoneIcon className="w-4 h-4 text-green-600" />
-                          <span className="text-green-800">{message.contactExtraction.phone}</span>
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              )}
+             
 
               {/* Lead Capture Message */}
               {message.leadCaptureMessage && (
@@ -578,7 +548,7 @@ const AIAssistant = () => {
             <ChatHeader />
             
             {/* Messages Container */}
-            <div className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-1">
+            <div className="flex-1 overflow-y-auto max-h-[calc(100vh-250px)] p-4 sm:p-6 space-y-1">
               {messages.map((message, index) => (
                 <div
                   key={message.id}
