@@ -181,7 +181,7 @@ const ChatHeader = () => (
           </div>
           <div>
             <h1 className="text-lg sm:text-xl font-bold bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
-              AI Assistant
+              SmartByte
             </h1>
             <p className="text-xs sm:text-sm text-gray-500 flex items-center gap-1">
               <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
