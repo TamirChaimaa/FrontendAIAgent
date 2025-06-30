@@ -575,24 +575,13 @@ const ChatInput = ({ onSend }) => {
 // Main Component
 const AIAssistant = () => {
   const [messages, setMessages] = useState([
-    [
-      {
-        id: 1,
-        text: `💻 Hello! Welcome to SmartByte  👋
+    {
+      id: 1,
+      text: "Hello! I'm your  Assistant. How can I help you today?",
 
-      I'm  your personal laptop assistant. How can I help you find the perfect device today?
- 
-    You can tell me about:
-    • What you need it for (school, gaming, work, design, development)
-    • Your preferred brand or type (Dell, HP, MacBook, ultrabook, etc.)
-    • Your budget range in DH (Dirhams)
-    • Desired features (RAM, storage, screen size, etc.)
-    • Or just ask for recommendations!
-`,
-        sender: "ai",
-        timestamp: new Date(),
-      },
-    ],
+      sender: "ai",
+      timestamp: new Date(),
+    },
   ]);
   const messagesEndRef = useRef(null);
   const [leadId, setLeadId] = useState(null);
