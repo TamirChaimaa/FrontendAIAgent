@@ -11,8 +11,8 @@ A smart ecommerce platform featuring , an AI-powered shopping assistant that hel
 <table>
   <tr>
     <td width="50%">
-      <p style="text-align:center"><em>Welcome Screen - Meet Amine</em></p>
-      <img src="https://github.com/TamirChaimaa/FrontendAIAgent/blob/main/public/smartbyte.png" alt="Welcome Screen - Meet Amine" style="width:100%">
+      <p style="text-align:center"><em>Welcome Screen - and Ask Question</em></p>
+      <img src="https://github.com/TamirChaimaa/FrontendAIAgent/blob/main/public/smartbyte4.png" alt="Welcome Screen" style="width:100%">
     </td>
     <td width="50%">
       <p style="text-align:center"><em>AI-Powered Search Results</em></p>
