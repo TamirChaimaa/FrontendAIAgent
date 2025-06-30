@@ -1,70 +1,187 @@
-# Getting Started with Create React App
+# 💻 SmartByte AI Agent
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A smart ecommerce platform featuring , an AI-powered shopping assistant that helps users find the ideal **laptop** through natural conversation. Built using modern web technologies, SmartByte delivers a seamless and intuitive shopping experience.
 
-## Available Scripts
+## 🌐 Live Demo
 
-In the project directory, you can run:
+👉 [**Explore SmartByte AI Agent**](https://frontend-ai-agent.vercel.app/)
 
-### `npm start`
+## 🖼️ Project Preview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<table>
+  <tr>
+    <td width="50%">
+      <p style="text-align:center"><em>Welcome Screen - Meet Amine</em></p>
+      <img src="https://github.com/TamirChaimaa/FrontendAIAgent/blob/main/public/smartbyte.png" alt="Welcome Screen - Meet Amine" style="width:100%">
+    </td>
+    <td width="50%">
+      <p style="text-align:center"><em>AI-Powered Search Results</em></p>
+      <img src="https://github.com/TamirChaimaa/FrontendAIAgent/blob/main/public/smartbyte1.png" alt="AI-Powered Search Results" style="width:100%">
+    </td>
+      <td width="50%">
+      <p style="text-align:center"><em>AI-Powered Search Results</em></p>
+      <img src="https://github.com/TamirChaimaa/FrontendAIAgent/blob/main/public/smartbyte2.png" alt="AI-Powered Search Results" style="width:100%">
+    </td>
+  </tr>
+</table>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Features
 
-### `npm test`
+### 🤖 AI Assistant 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Conversational Search
+* Intelligent Filtering
+* Real-Time Inventory Check
+* Customer Interest Logging
 
-### `npm run build`
+### 💼 Product Catalog
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Top Brands: Apple, Dell, Lenovo, HP, Asus
+* Use Cases: Programming, Gaming, Business, Student
+* Filter by: RAM, processor, storage, screen size, battery
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 💬 Chat Experience
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Seamless Conversations
+* Visual Laptop Displays
+* Quick Reservations
+* Responsive Design
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🛠️ Tech Stack
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This project follows the **Model-View-Controller (MVC)** architectural pattern to ensure a clean separation of concerns, making it easier to maintain, scale, and test.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Frontend**
+React, Tailwind CSS, Vite
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Backend**
+Flask (Python), Gemini Flash 1.5 (LLM), MongoDB
 
-## Learn More
+**Deployment**
+Frontend: Vercel
+Backend: Railway
+Database: MongoDB Atlas
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## ⚙️ How It Works
 
-### Code Splitting
+1. User Chat → 2. AI Understanding → 3. Product Matching → 4. Result Display → 5. Lead Capture → 6. Follow-up Ready
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 📦 MongoDB Schema
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### messages Collection
 
-### Making a Progressive Web App
+```json
+{
+  "_id": "68610fb664e52aedfb5c9f95",
+  "product_ids": ["product_id_1", "product_id_2"],
+  "question": "What are the prices of products X and Y?",
+  "answer": "Product X is €45, Product Y is €60.",
+  "timestamp": "2025-06-22T09:10:00Z"
+}
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### leads Collection
 
-### Advanced Configuration
+```json
+{
+  "_id": "6861a507631e5d8fdcd8cb76",
+  "name": "To be provided",
+  "email": "pending@example.com",
+  "phone": "To be provided",
+  "interested_products": ["product_id"],
+  "source_message_id": "6861a505631e5d8fdcd8cb75",
+  "status": "new",
+  "created_at": "2025-06-29T20:41:43.617Z",
+  "last_contact": "2025-06-29T20:41:43.617Z",
+  "notes": ""
+}
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### products Collection
 
-### Deployment
+```json
+{
+  "_id": "6860899164e52aedfb5c9f8f",
+  "name": "MacBook Air M2",
+  "description": "Lightweight laptop with the M2 chip, ideal for coding and productivity",
+  "price": 999,
+  "tags": ["laptop", "programming", "portable"],
+  "image_url": "https://...",
+  "specs": {
+    "processor": "Apple M2",
+    "ram": "8GB",
+    "storage": "256GB SSD",
+    "screen_size": "13.6 inch",
+    "battery_life": "18 hours",
+    "weight": "1.24 kg",
+    "os": "macOS Ventura",
+    "ports": ["2x Thunderbolt 4", "MagSafe 3", "3.5mm audio jack"],
+    "keyboard": "Magic Keyboard with Touch ID"
+  },
+  "warranty": "1 year",
+  "brand": "Apple",
+  "release_date": "2022-07-01",
+  "rating": 4.8,
+  "reviews_count": 354,
+  "available": true,
+  "category": "Laptops",
+  "created_at": "2025-06-29T00:00:00Z"
+}
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 🧪 Test Scenarios
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* "I need a MacBook for programming"
+* "What’s the price of Dell laptops under \$1000?"
+* "Can I reserve the Lenovo gaming model?"
+
+---
+
+## 🧰 Installation
+
+### Frontend
+
+```bash
+cd frontendaiagent
+npm start
+```
+
+### Backend
+
+```bash
+cd aigent
+pip install -r requirements.txt
+python server.py
+```
+
+---
+
+## 🙏 Acknowledgments
+
+* Gemini Flash 1.5
+* MongoDB Atlas
+* Vercel & Railway
+* Open-source community
+
+---
+
+## 🔮 Future Enhancements
+
+* Voice Search
+* Image-based Search
+* Payment Integration
+* French & Arabic Support
+* Inventory Management for Admins
+
+
+## 📝 License
+
+This project is for educational use only. All rights reserved.
