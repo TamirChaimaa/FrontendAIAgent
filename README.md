@@ -23,7 +23,7 @@ A smart ecommerce platform featuring , an AI-powered shopping assistant that hel
   <tr>
     <td width="50%">
       <p style="text-align:center"><em></em></p>
-      <img src="https://github.com/TamirChaimaa/FrontendAIAgent/blob/main/public/smartbyte3.png" alt="other informations 2" style="width:100%">
+      <img src="https://github.com/TamirChaimaa/FrontendAIAgent/blob/main/public/smartbyte2.png" alt="other informations 2" style="width:100%">
     </td>
    
   </tr>
