@@ -16,7 +16,16 @@ A smart ecommerce platform featuring , an AI-powered shopping assistant that hel
     </td>
     <td width="50%">
       <p style="text-align:center"><em>AI-Powered Search Results</em></p>
-      <img src="https://github.com/TamirChaimaa/FrontendAIAgent/blob/main/public/smartbyte1.png" alt="AI-Powered Search Results" style="width:100%">
+      <img src="https://github.com/TamirChaimaa/FrontendAIAgent/blob/main/public/smartbyte1.png" alt="AI-Powered Search Results" style="width:100%"> 
+  </tr>
+</table>
+<table>
+  <tr>
+    <td width="50%">
+      <p style="text-align:center"><em></em></p>
+      <img src="https://github.com/TamirChaimaa/FrontendAIAgent/blob/main/public/smartbyte3.png" alt="Welcome Screen" style="width:100%">
+    </td>
+   
   </tr>
 </table>
 
