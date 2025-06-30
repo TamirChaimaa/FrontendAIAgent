@@ -40,9 +40,9 @@ A smart ecommerce platform featuring , an AI-powered shopping assistant that hel
 
 ### 💼 Product Catalog
 
-* Top Brands: Apple, Dell, Lenovo, HP, Asus
-* Use Cases: Programming, Gaming, Business, Student
-* Filter by: RAM, processor, storage, screen size, battery
+* Top Brands: Apple, Dell, Lenovo, HP ..
+* Use Cases: Programming, Gaming, Business, Student....
+* Filter by: RAM, processor, storage, screen size, category....
 
 ### 💬 Chat Experience
 
@@ -61,7 +61,7 @@ This project follows the **Model-View-Controller (MVC)** architectural pattern t
 React, Tailwind CSS, Vite
 
 **Backend**
-Flask (Python), Gemini Flash 1.5 (LLM), MongoDB
+Flask (Python), Gemini Flash 1.5 , MongoDB
 
 **Deployment**
 Frontend: Vercel
