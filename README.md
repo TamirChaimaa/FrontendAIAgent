@@ -58,7 +58,7 @@ A smart ecommerce platform featuring , an AI-powered shopping assistant that hel
 This project follows the **Model-View-Controller (MVC)** architectural pattern to ensure a clean separation of concerns, making it easier to maintain, scale, and test.
 
 **Frontend**
-React, Tailwind CSS, Vite
+React, Tailwind CSS
 
 **Backend**
 Flask (Python), Gemini Flash 1.5 , MongoDB
@@ -143,9 +143,8 @@ Database: MongoDB Atlas
 
 ## 🧪 Test Scenarios
 
-* "I need a MacBook for programming"
-* "What’s the price of Dell laptops under \$1000?"
-* "Can I reserve the Lenovo gaming model?"
+* "What is the weight and battery life of the MacBook Air M2?"
+* "What processor and RAM capacity does the Dell model designed for programming have?"
 
 ---
 
@@ -182,7 +181,7 @@ python server.py
 * Voice Search
 * Image-based Search
 * Payment Integration
-* French & Arabic Support
+* Arabic Support
 * Inventory Management for Admins
 
 
